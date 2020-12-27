@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+       <meta charset="utf-8">
        <title>Json Example 2</title>
     </head>
 
@@ -9,11 +10,40 @@
       <script>
          var person = {
             name:"Brad",
-            age : 25
-         } 
+            age : 25,
+            address :{
+            street:"BTM layout 2nd Stage",
+            city : "Bangalore"
+         },
+         }
 
-         console.log(person)
+         var people = [
+         {
+            name : "John",
+            age : 30
+         },
+         {
+            name : "Alex",
+            age : 35
+         },
+         {
+            name : "Tony",
+            age : 38
+         }
+      ]
+
+      // console.log(people)
+
+      for(var i=0; i < people.length; i++){
+         console.log(people[i])
+      }
+
+
+         person = JSON.stringify(person);
+         person = JSON.parse(person);
+
+         console.log(person.address);
       </script>
 
-    </body>
+    </body> 
 </html>
