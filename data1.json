@@ -1,0 +1,15 @@
+ [
+     {
+         "name": "The Math",
+         "numberOfEmployees": 100,
+         "ceo":"XYZ",
+         "ratings":4.2
+     },
+
+     {
+        "name": "Accenture",
+        "numberOfEmployees": 1000,
+        "ceo":"ABC",
+        "ratings":4.1
+     }
+ ]
