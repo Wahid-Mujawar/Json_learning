@@ -8,43 +8,52 @@
       <ul id ="people"></ul>
       <script>
 
-         var person = {
-            name:"Brad",
-            age : 25,
-            address :{
-            street:"BTM layout 2nd Stage",
-            city : "Bangalore"
-         },
-         }
+      //    var person = {
+      //       name:"Brad",
+      //       age : 25,
+      //       address :{
+      //       street:"BTM layout 2nd Stage",
+      //       city : "Bangalore"
+      //    },
+      //    }
 
-         var people = [
-         {
-            name : "John",
-            age : 30
-         },
-         {
-            name : "Alex",
-            age : 35
-         },
-         {
-            name : "Tony",
-            age : 38
-         }
-      ];
+      //    var people = [
+      //    {
+      //       name : "John",
+      //       age : 30
+      //    },
+      //    {
+      //       name : "Alex",
+      //       age : 35
+      //    },
+      //    {
+      //       name : "Tony",
+      //       age : 38
+      //    }
+      // ];
 
-      // console.log(people)
-         var output = '';
-         for(var i = 0; i < people.length; i++){
-            // console.log(people[i])
-            output += '<ul>'+people[i].name+'</ul>';
-         }
-         document.getElementById('people').innerHTML = output;
+      // // console.log(people)
+      //    var output = '';
+      //    for(var i = 0; i < people.length; i++){
+      //       // console.log(people[i])
+      //       output += '<ul>'+people[i].name+'</ul>';
+      //    }
+      //    document.getElementById('people').innerHTML = output;
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+               if (this.readyState == 4 && this.status == 200) {
+                 console.log(xhttp.responseText);
+               }
+            };
+            xhttp.open("GET", "data2.json", true);
+            xhttp.send();
 
 
-         person = JSON.stringify(person);
-         person = JSON.parse(person);
+      //    person = JSON.stringify(person);
+      //    person = JSON.parse(person);
 
-         console.log(person.address);
+      //    console.log(person.address);
       </script>
 
     </body> 
