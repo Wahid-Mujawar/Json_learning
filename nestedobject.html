@@ -27,17 +27,20 @@
             return{
                data: {
                   items: [
-                     {name: 'Shoe', price: $100},
-                     {name: 'Sneakers', price: $200},
+                     {name: 'Shoe', price: 100},
+                     {name: 'Sneakers', price: 200},
                   ]
                },
                status: 'Live'
             }
          }
 
-         const {data : { item : {name, size: {US:Indian, UK:EU} } }, status} = makeItem();
-         console.log(name, Indian,EU);
-         // alert(status);
+         // const {data : { item : {name, size: {US:Indian, UK:EU} } }, status} = makeItem();
+         // console.log(name, Indian,EU);
+         // // alert(status);
+
+         const {data:{ items:[text1] }, } = makeArrayOfItems();
+         console.log(text1);
 
       </script>
    </body>
