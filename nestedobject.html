@@ -35,8 +35,8 @@
             }
          }
 
-         const {data : { item : {name, size} }, status} = makeItem();
-         console.log(name, size);
+         const {data : { item : {name, size: {US, UK} } }, status} = makeItem();
+         console.log(name, US,UK);
          // alert(status);
 
       </script>
