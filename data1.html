@@ -7,23 +7,29 @@
 
 <body>
     <script type="text/javascript">
-    let companies =  
-    `[
-     {
-         "name": "The Math",
-         "numberOfEmployees": 100,
-         "ceo":"XYZ",
-         "ratings":4.2
-     },
+    // let companies =  
+    // `[
+    //  {
+    //      "name": "The Math",
+    //      "numberOfEmployees": 100,
+    //      "ceo":"XYZ",
+    //      "ratings":4.2
+    //  },
 
-     {
-        "name": "Accenture",
-        "numberOfEmployees": 1000,
-        "ceo":"ABC",
-        "ratings":4.1
-     }
-    ]`
-     console.log(JSON.parse(companies))
+    //  {
+    //     "name": "Accenture",
+    //     "numberOfEmployees": 1000,
+    //     "ceo":"ABC",
+    //     "ratings":4.1
+    //  }
+    // ]`
+    //  console.log(JSON.parse(companies))
+
+    fetch("data1.json")
+        .then(response => response.json())
+        .then(data => {
+            console.log(data)
+        })
      
 
     </script>
