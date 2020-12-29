@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>Nested Object Destructing</title>
+   </head>
+
+   <body>
+      <script>
+
+         function makeItem() {
+            return {
+               data: {
+                  item:{
+                     name: 'Shoe',
+                     size: {
+                        US: 9,
+                        UK: 8,
+                     }
+                  }
+               },
+               status: 'Live'
+            }
+         }
+
+         function makeArrayOfItems() {
+            return{
+               data:{
+                  items:[
+                     {name: 'Shoe', price: $100},
+                     {name: 'Sneakers', price: $200},
+                  ]
+               },
+               status: 'Live'
+            }
+         }
+
+         const {data, status} = makeItem();
+         console.log({data, status});
+         alert(status);
+
+      </script>
+   </body>
+
+</html>
