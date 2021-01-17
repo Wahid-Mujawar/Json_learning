@@ -11,5 +11,12 @@
         "numberOfEmployees": 1000,
         "ceo":"ABC",
         "ratings":4.1
+     },
+
+     {
+        "name": "Walmart",
+        "numberOfEmployees": 5000,
+        "ceo":"QPR",
+        "ratings":4
      }
  ]
